@@ -11,6 +11,6 @@
     ?>
 
     <input type="text" name="name" id="name" value="<?= $total ?>">
-    <a href="home.php">Next</a>
+    <a href="/api/home.php">Next</a>
 </body>
 </html>
