@@ -6,16 +6,16 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>MyGaji - Add Staff</title>
-    <link rel="icon" href="src/APB.png">
-    <link rel="apple-touch-icon" href="src/APB.png">
+    <link rel="icon" href="/src/APB.png">
+    <link rel="apple-touch-icon" href="/src/APB.png">
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="css/css/all.min.css">
+    <link rel="stylesheet" href="/css/css/all.min.css">
     <script src="https://kit.fontawesome.com/b9ae426220.js" crossorigin="anonymous"></script>
     <!-- Theme style -->
-    <link rel="stylesheet" href="css/adminlte.min.css">
+    <link rel="stylesheet" href="/css/adminlte.min.css">
     <script src="MS_letter/MS_JS.js/pizzip.min.js"></script>
     <script src="MS_letter/MS_JS.js/doxctemplater.js"></script>
     <script src="MS_letter/MS_JS.js/fileSaver.min.js"></script>
@@ -48,7 +48,7 @@
             min-height: 100vh;
             overflow: auto;
             padding: 0; /* Remove padding that might restrict width */
-            background-image: url('src/soft-yellowbg.jpg');
+            background-image: url('/src/soft-yellowbg.jpg');
         }
 
         .content {
@@ -249,11 +249,11 @@
 <div class="wrapper">
 
     <!-- Navbar -->
-    <nav class="main-header navbar navbar-expand-md navbar-light navbar-white border-0" style="background-image: url('src/soft-yellowbg.jpg');">
+    <nav class="main-header navbar navbar-expand-md navbar-light navbar-white border-0" style="background-image: url('/src/soft-yellowbg.jpg');">
         <div class="container justify-content-center"> <!-- Center the container content -->
             <!-- Logo -->
             <a href="../../index.html" class="navbar-brand">
-                <img src="src/APB.png" alt="APB Logo" class="Logo-container" style="opacity: .8 ; width: 400px; height: 100px; object-fit: contain;">
+                <img src="/src/APB.png" alt="APB Logo" class="Logo-container" style="opacity: .8 ; width: 400px; height: 100px; object-fit: contain;">
             </a>
             <!-- end logo -->
         </div>
@@ -370,7 +370,7 @@
     <!-- /.control-sidebar -->
     
     <!-- Main Footer -->
-    <footer class="main-footer border-0 text-center" style="background-image: url('src/soft-yellowbg.jpg');
+    <footer class="main-footer border-0 text-center" style="background-image: url('/src/soft-yellowbg.jpg');
 "> <!-- Add text-center class -->
         <!-- Default to the left -->
         &copy; 2025 Ayam Penyet Mayang Sdn Bhd. All rights reserved.<br>Developed by <a href="https://github.com/Mhakim38" target="_blank">Hakim.</a>
