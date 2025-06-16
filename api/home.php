@@ -3,14 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>Document</title>
 </head>
 <body>
-    <?php
-        $total = 2;
-    ?>
-
-    <input type="text" name="name" id="name" value="<?= $total ?>">
-    <a href="home.php">Next</a>
+    <h1>This is the second page</h1>
 </body>
 </html>
