@@ -19,6 +19,8 @@
     <script src="MS_letter/MS_JS.js/pizzip.min.js"></script>
     <script src="MS_letter/MS_JS.js/doxctemplater.js"></script>
     <script src="MS_letter/MS_JS.js/fileSaver.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 </head>
 <body class="hold-transition sidebar-collapse layout-top-nav">
@@ -119,8 +121,8 @@
                             
                             <div class="subtitle mt-4"><strong>Generate Letter</strong></div>
                             <div class="d-flex justify-content-between mt-4">
-                                <button type="button" class="submit mr-2 mt-0" onclick="generateWarningLetter()">Warning Letter</button>
-                                <button type="button" class="submit mt-0" onclick="generateReasonLetter()">Reason Letter</button>
+                                <button type="button" class="submit mr-2 mt-0" onclick="processData('warningLetter')">Warning Letter</button>
+                                <button type="button" class="submit mt-0" onclick="processData('ReasonLetter')">Reason Letter</button>
                             </div>
                             <button
                             type="button"
@@ -158,5 +160,37 @@
 <script src="jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+function processData(input){
+    var prefix = $('#designation').val();
+    var name = $('#name').val();
+    var position = $('#position').val();
+    var id = $('#id').val();
+    var ic = $('#ic').val();
+    var fault = $('#fault').val();
+
+    $.ajax({
+        url: 'ajax/index.php',
+        type: 'POST',
+        data: {
+            type: input,
+            prefix: prefix,
+            name: name,
+            position: position,
+            id: id,
+            ic: ic,
+            fault: fault
+        },
+        success: function(response) {
+            console.log('Data processed successfully:', response);
+            alert('Letter generated successfully!');
+        },
+    })
+}
+
+
+</script>
 </body>
 </html>
