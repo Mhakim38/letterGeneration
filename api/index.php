@@ -183,9 +183,18 @@ function processData(input){
             ic: ic,
             fault: fault
         },
-        success: function(response) {
-            console.log('Data processed successfully:', response);
-            alert('Letter generated successfully!');
+        
+        xhrFields: {
+            responseType: 'blob'
+        },
+        success: function(blob) {
+            // Create a link to download the file
+            var link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = "Generated_Letter.docx";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         },
     })
 }
