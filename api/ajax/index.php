@@ -1,5 +1,5 @@
 <?php
-require_once '../../vendor/autoload.php';
+require_once '../vendor/autoload.php';
 use PhpOffice\PhpWord\TemplateProcessor;
 
 $reasonLetterPath = '../../src/MS/reason_letter.docx';
